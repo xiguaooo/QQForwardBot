@@ -1,0 +1,19 @@
+{
+  "backend": "auto",
+  "snowluma_ws_url": "ws://127.0.0.1:8095",
+  "web_port": 8000,
+  "groups": [
+    {
+      "id": "default",
+      "name": "默认分组",
+      "source_group_id": 0,
+      "target_group_ids": [],
+      "forward_template": "来自 {source_group_id} 的新消息：\n发送者：{sender_nickname}（{sender_id}）\n发送时间：{time}\n{message}",
+      "batch_size": 1,
+      "forward_mode": "forward",
+      "watched_qq_ids": [],
+      "qz_poll_interval": 30,
+      "qz_action": "get_emotion_list"
+    }
+  ]
+}
